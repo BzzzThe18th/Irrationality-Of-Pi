@@ -23,10 +23,14 @@ bgColor = input("Background color in hex: ")
 if bgColor == '': bgColor = '#1c1c1c'
 color = input("Line color in hex: ")
 if color == '': color = '#ffffff'
+width = input("Line width (integer): ")
+if width == '': width = 1
+else: width = int(width)
 input("Press ENTER to begin the visualization")
 
 turtle.bgcolor(bgColor)
 outerPen.color(color)
+outerPen.width(width)
 
 i = 0
 while True:
